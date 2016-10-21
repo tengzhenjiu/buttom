@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
@@ -405,7 +406,7 @@ public class CircularProgressButton extends Button {
 				setIcon(mIconComplete);
 			} else {
 				setText(mCompleteText);
-				setTextColor(0xffffff);
+				setTextColor(Color.rgb(255, 255, 255));
 			}
 			mMorphingInProgress = false;
 			mState = State.COMPLETE;
